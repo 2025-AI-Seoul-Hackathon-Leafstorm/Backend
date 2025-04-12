@@ -1,0 +1,17 @@
+# Triggered via API request.
+# Reads a processed document JSON file from S3, sends it to Upstage's solar-pro model for summarization,
+# stores the Markdown result back to S3, and returns the summary in the response.
+
+# Required external library:
+openai==1.52.2
+
+# Note:
+# AWS Lambda currently uses Python 3.13 as of this writing.
+# If you encounter compatibility errors, ensure the architecture and Python runtime of your Lambda environment
+# match your local environment where dependencies were packaged.
+
+# To verify compatibility, run this command and confirm it outputs .so files targeting Python 3.13:
+# Example:
+# $ find python -name "*.so"
+# python/jiter/jiter.cpython-313-x86_64-linux-gnu.so
+# python/pydantic_core/_pydantic_core.cpython-313-x86_64-linux-gnu.so
