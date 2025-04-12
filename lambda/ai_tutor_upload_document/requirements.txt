@@ -1,0 +1,4 @@
+# Triggered via API request.
+# Uploads a file to the 'upload' folder in the 'ai-tutor-source-docs' S3 bucket
+# and creates document folder structure in 'ai-tutor-target-docs'.
+# No additional dependencies required – uses AWS Lambda built-in libraries.
