@@ -1,0 +1,4 @@
+# Triggered via API request.
+# Lists documents under a specific folder in the 'ai-tutor-target-docs' S3 bucket,
+# including metadata from processed/_result.json files if available.
+# No additional dependencies required – uses AWS Lambda built-in libraries.
