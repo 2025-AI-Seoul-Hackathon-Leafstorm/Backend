@@ -1,0 +1,3 @@
+# Triggered via API request.
+# Lists all top-level folders in the S3 bucket and counts documents under each folder's 'processed/' directory.
+# No additional dependencies required – uses AWS Lambda built-in libraries.
