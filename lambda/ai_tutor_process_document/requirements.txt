@@ -1,0 +1,6 @@
+# Libraries to be used on top of the layer
+requests
+
+# Brief code explanation:
+# Triggered by uploads to the 'upload' folder in the 'ai-tutor-source-docs' S3 bucket.
+# Parses the uploaded PDF document and stores the result.
