@@ -6,8 +6,8 @@ from botocore.exceptions import ClientError
 import base64
 
 # 환경 변수 가져오기
-SOURCE_BUCKET = os.environ.get('SOURCE_BUCKET', 'ai-tutor-source-docs')  # 처리 대기 버킷
-TARGET_BUCKET = os.environ.get('TARGET_BUCKET', 'ai-tutor-target-docs')  # 대상 버킷
+SOURCE_BUCKET = os.environ.get('SOURCE_BUCKET', 'source버킷')  # 처리 대기 버킷
+TARGET_BUCKET = os.environ.get('TARGET_BUCKET', 'target버킷')  # 대상 버킷
 AWS_REGION = os.environ.get('AWS_REGION', 'us-east-1')
 
 # S3 클라이언트 초기화
