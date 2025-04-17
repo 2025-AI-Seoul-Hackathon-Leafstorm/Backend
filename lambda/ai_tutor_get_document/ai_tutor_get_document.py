@@ -7,7 +7,7 @@ from openai import OpenAI  # openai 패키지 (openai==1.52.2)
 # S3 클라이언트 초기화
 s3_client = boto3.client("s3")
 # 결과 JSON 파일이 저장된 S3 버킷명 (환경변수 또는 기본값)
-RESULT_BUCKET = os.environ.get("RESULT_BUCKET", "ai-tutor-target-docs")
+RESULT_BUCKET = os.environ.get("RESULT_BUCKET", "target버킷")
 
 
 def lambda_handler(event, context):
