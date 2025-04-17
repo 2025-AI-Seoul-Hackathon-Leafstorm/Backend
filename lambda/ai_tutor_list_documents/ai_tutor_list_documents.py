@@ -5,7 +5,7 @@ from botocore.exceptions import ClientError
 import re
 
 # 환경 변수 가져오기
-TARGET_BUCKET = os.environ.get('TARGET_BUCKET', 'ai-tutor-target-docs')
+TARGET_BUCKET = os.environ.get('TARGET_BUCKET', 'target버킷')
 AWS_REGION = os.environ.get('AWS_REGION', 'us-east-1')
 
 # S3 클라이언트 초기화
