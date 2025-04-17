@@ -9,15 +9,15 @@ logger.setLevel(logging.INFO)
 
 # OpenAI 클라이언트 초기화
 openai_client = OpenAI(
-    api_key="up_ZHV5KSiPKtoVUgTlQfuHiIk7LaUmg",
+    api_key="api-key",
     base_url=os.environ.get("OPENAI_BASE_URL", "https://api.upstage.ai/v1")
 )
 
 # DynamoDB와 S3 클라이언트 초기화
 dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table("ai_tutor_chatlog_v2")  # 테이블 이름 직접 입력
+table = dynamodb.Table("테이블 명칭")  # 테이블 이름 직접 입력
 s3_client = boto3.client('s3')
-S3_BUCKET = "ai-tutor-target-docs"  # S3 버킷 이름 직접 입력
+S3_BUCKET = "버킷 명칭"  # S3 버킷 이름 직접 입력
 
 def chat_with_solar(messages):
     response = openai_client.chat.completions.create(
